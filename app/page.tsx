@@ -8,10 +8,9 @@ export default function Home() {
     return(
         <main className="bg-white flex min-h-screen flex-col items-center justify-between p-24">
             <div className="text-black">
-                <p>This is a Next.js application hosted on Azure Static Web Apps with hybrid rendering. The time on the server is <strong>{timeOnServer}</strong>.</p>
-                <CurrentTimeFromAPI />
+                This is a Next.js application hosted on Azure Static Web Apps with hybrid rendering. The time on the server is <strong>{timeOnServer}</strong>.
             </div>
-            
+            <CurrentTimeFromAPI />
         </main>
     );
 }
