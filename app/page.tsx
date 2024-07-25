@@ -1,12 +1,17 @@
-import Image from "next/image";
+import { unstable_noStore as noStore } from 'next/cache';
+import { CurrentTimeFromAPI } from './components/CurrentTimeFromAPI';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col items-center">
-        <h1 className="text-5xl font-bold">Hello, world!</h1>
-        <p className="text-lg mt-4">This is a Next.js app with SWA!</p>
-      </div>
-    </main>
-  );
+    noStore();
+
+    const timeOnServer = new Date().toLocaleTimeString('en-US');
+    return(
+        <main className="bg-white flex min-h-screen flex-col items-center justify-between p-24">
+            <div className="text-black">
+                <p>This is a Next.js application hosted on Azure Static Web Apps with hybrid rendering. The time on the server is <strong>{timeOnServer}</strong>.</p>
+                <CurrentTimeFromAPI />
+            </div>
+            
+        </main>
+    );
 }
