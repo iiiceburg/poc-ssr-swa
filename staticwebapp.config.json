@@ -4,10 +4,10 @@
     },
     "forwardingGateway": {
         "requiredHeaders": {
-            "X-Azure-FDID" : "6bd2550e-3da3-429d-9cb8-a88cea829389"
+            "X-Azure-FDID" : "64dedcc1-fbbc-4513-b263-813dc8a46d64"
         },
         "allowedForwardedHosts": [
-            "swaaristech-dsg3fpbudyghe5a2.a01.azurefd.net"
+            "poc-frontdoor-e7azgda5bsfsdcdk.a01.azurefd.net"
         ]
     }
 }
