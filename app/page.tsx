@@ -46,7 +46,7 @@ const Page: FC = async () => {
                         </div>
                     ))
                 ) : (
-                    <p className="text-xl text-gray-600 col-span-4">No blog posts available.</p>
+                    <p className="text-xl text-gray-600 col-span-4">No blog posts available</p>
                 )}
             </div>
         </main>
